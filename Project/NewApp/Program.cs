@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks.Dataflow;
+﻿
+using System;
+using System.Security.AccessControl;
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
@@ -25,13 +27,68 @@
 //     }
 // }
 
-internal class Program
-{
-    public static void Main (string[] args)
-    {
-       string name ="Dang Ngoc Tuong";
-       int age = 20;
+// internal class Program
+// {
+//     public static void Main (string[] args)
+//     {
+//        string name ="Dang Ngoc Tuong";
+//        int age = 20;
 
-       Console.WriteLine ("Ten : {0}, Tuoi : {1}",name, age);
+//        Console.WriteLine ("Ten : {0}, Tuoi : {1}",name, age);
+//     }
+// }
+
+
+public class Program
+{       
+    private static void Main(string[] args)
+    {   
+
+//      <- Nhập 2 số a, b ->
+
+        //khai báo a, b (int)
+        int a, b; 
+
+        // Hiện thị ra màn hình 
+        System.Console.Write("Nhap a : ");
+
+        // Nhập a từ bàn phím
+        a = Convert.ToInt32(Console.ReadLine());
+
+        // Hiển thị ra màn hình 
+        System.Console.Write("Nhap b : ");
+
+        //Nhập b từ bàn phím
+
+        b = Convert.ToInt32(Console.ReadLine());
+
+//      <- Kết thúc nhập 2 số a, b ->
+
+//      <- tính hiệu 2 số và in ra màn hình ->
+        System.Console.WriteLine("-----------------------------");
+        System.Console.WriteLine("{0} - {1} = {2}", a, b, a-b );
+
+//      <- Kết thúc tính hiệu  2 số ->
+
+//      <- Tính tích 2 số và in ra màn hình ->    
+
+        System.Console.WriteLine("---------------------------------");
+        System.Console.WriteLine("{0} * {1} = {2}", a, b, a*b);
+
+//      <- Kết thúc tính tích 2 số ->
+
+//      <- Tính chia lấy nguyên 2 số và in ra màn hình ->    
+
+        System.Console.WriteLine("---------------------------------");
+        System.Console.WriteLine("{0} / {1} = {2}", a, b, a/b);
+
+//      <- Kết thúc tính chia lấy nguyên 2 số ->
+
+//      <- Tính chia lấy dư 2 số và in ra màn hình ->    
+
+        System.Console.WriteLine("---------------------------------");
+        System.Console.WriteLine("{0} % {1} = {2}", a, b, a%b);
+
+//      <- Kết thúc tính chia lấy dư 2 số ->
     }
 }
