@@ -90,5 +90,40 @@ public class Program
         System.Console.WriteLine("{0} % {1} = {2}", a, b, a%b);
 
 //      <- Kết thúc tính chia lấy dư 2 số ->
+
+        System.Console.WriteLine("---------------------------------");
+        System.Console.WriteLine("{1} < {0}", a, b);
+
+
+
+
+        int day = a;
+        switch(day)
+        {
+            case 1: System.Console.WriteLine("Hôm nay là thu Chủ Nhật");
+            break;
+            
+            case 2: System.Console.WriteLine("Hôm nay là thu 2");
+            break;
+            
+            case 3: System.Console.WriteLine("Hôm nay là thu 3");
+            break;
+            
+            case 4: System.Console.WriteLine("Hôm nay là thu 4");
+            break;
+            
+            case 5: System.Console.WriteLine("Hôm nay là thu 5");
+            break;
+            
+            case 6: System.Console.WriteLine("Hôm nay là thu 6");
+            break;
+            
+            case 7: System.Console.WriteLine("Hôm nay là thu 7");
+            break;
+
+            default : System.Console.WriteLine("Không phù hợp!");
+            break;
+
+        }
     }
 }
