@@ -64,66 +64,71 @@ public class Program
 
 //      <- Kết thúc nhập 2 số a, b ->
 
-//      <- tính hiệu 2 số và in ra màn hình ->
-        System.Console.WriteLine("-----------------------------");
-        System.Console.WriteLine("{0} - {1} = {2}", a, b, a-b );
+// //      <- tính hiệu 2 số và in ra màn hình ->
+//         System.Console.WriteLine("-----------------------------");
+//         System.Console.WriteLine("{0} - {1} = {2}", a, b, a-b );
 
-//      <- Kết thúc tính hiệu  2 số ->
+// //      <- Kết thúc tính hiệu  2 số ->
 
-//      <- Tính tích 2 số và in ra màn hình ->    
+// //      <- Tính tích 2 số và in ra màn hình ->    
 
-        System.Console.WriteLine("---------------------------------");
-        System.Console.WriteLine("{0} * {1} = {2}", a, b, a*b);
+//         System.Console.WriteLine("---------------------------------");
+//         System.Console.WriteLine("{0} * {1} = {2}", a, b, a*b);
 
-//      <- Kết thúc tính tích 2 số ->
+// //      <- Kết thúc tính tích 2 số ->
 
-//      <- Tính chia lấy nguyên 2 số và in ra màn hình ->    
+// //      <- Tính chia lấy nguyên 2 số và in ra màn hình ->    
 
-        System.Console.WriteLine("---------------------------------");
-        System.Console.WriteLine("{0} / {1} = {2}", a, b, a/b);
+//         System.Console.WriteLine("---------------------------------");
+//         System.Console.WriteLine("{0} / {1} = {2}", a, b, a/b);
 
-//      <- Kết thúc tính chia lấy nguyên 2 số ->
+// //      <- Kết thúc tính chia lấy nguyên 2 số ->
 
-//      <- Tính chia lấy dư 2 số và in ra màn hình ->    
+// //      <- Tính chia lấy dư 2 số và in ra màn hình ->    
 
-        System.Console.WriteLine("---------------------------------");
-        System.Console.WriteLine("{0} % {1} = {2}", a, b, a%b);
+//         System.Console.WriteLine("---------------------------------");
+//         System.Console.WriteLine("{0} % {1} = {2}", a, b, a%b);
 
-//      <- Kết thúc tính chia lấy dư 2 số ->
+// //      <- Kết thúc tính chia lấy dư 2 số ->
 
-        System.Console.WriteLine("---------------------------------");
-        System.Console.WriteLine("{1} < {0}", a, b);
-
-
+//         System.Console.WriteLine("---------------------------------");
+//         System.Console.WriteLine("{1} < {0}", a, b);
 
 
-        int day = a;
-        switch(day)
+
+
+        // int day = a;
+        // switch(day)
+        // {
+        //     case 1: System.Console.WriteLine("Hôm nay là thu Chủ Nhật");
+        //     break;
+            
+        //     case 2: System.Console.WriteLine("Hôm nay là thu 2");
+        //     break;
+            
+        //     case 3: System.Console.WriteLine("Hôm nay là thu 3");
+        //     break;
+            
+        //     case 4: System.Console.WriteLine("Hôm nay là thu 4");
+        //     break;
+            
+        //     case 5: System.Console.WriteLine("Hôm nay là thu 5");
+        //     break;
+            
+        //     case 6: System.Console.WriteLine("Hôm nay là thu 6");
+        //     break;
+            
+        //     case 7: System.Console.WriteLine("Hôm nay là thu 7");
+        //     break;
+
+        //     default : System.Console.WriteLine("Không phù hợp!");
+        //     break;
+
+        // }
+
+        for (int i = 0; i < 10; i++)
         {
-            case 1: System.Console.WriteLine("Hôm nay là thu Chủ Nhật");
-            break;
-            
-            case 2: System.Console.WriteLine("Hôm nay là thu 2");
-            break;
-            
-            case 3: System.Console.WriteLine("Hôm nay là thu 3");
-            break;
-            
-            case 4: System.Console.WriteLine("Hôm nay là thu 4");
-            break;
-            
-            case 5: System.Console.WriteLine("Hôm nay là thu 5");
-            break;
-            
-            case 6: System.Console.WriteLine("Hôm nay là thu 6");
-            break;
-            
-            case 7: System.Console.WriteLine("Hôm nay là thu 7");
-            break;
-
-            default : System.Console.WriteLine("Không phù hợp!");
-            break;
-
+            System.Console.WriteLine("Day la lan lap thu " + i);
         }
     }
 }
