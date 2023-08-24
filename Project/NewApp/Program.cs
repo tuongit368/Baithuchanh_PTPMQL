@@ -126,9 +126,16 @@ public class Program
 
         // }
 
-        for (int i = 0; i < 10; i++)
-        {
-            System.Console.WriteLine("Day la lan lap thu " + i);
+        // for (int i = 0; i < 10; i++)
+        // {
+        //     System.Console.WriteLine("Day la lan lap thu " + i);
+        // }
+
+        int d = 1;
+        while(d<10){
+            System.Console.WriteLine("Vong lap thu {0}", d);
+            d++;
         }
+
     }
 }
