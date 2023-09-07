@@ -1,18 +1,18 @@
-﻿using NewApp.Models;
+﻿// using NewApp.Models;
 
-    public class Program
-    {
+//     public class Program
+//     {
         
 
-        static void Main(string[] args)
-        {
-            Person ps1 = new Person();
+//         static void Main(string[] args)
+//         {
+//             Person ps1 = new Person();
         
-            ps1.Input();
+//             ps1.Input();
 
-            ps1.Output();
-        }
-    }
+//             ps1.Output();
+//         }
+//     }
 
 // using System;
 // using System.Security.AccessControl;
@@ -154,5 +154,14 @@
 
 //     }
 // }
+using System;
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        const string hoten = "Dang Ngoc Tuong";
+        const int namLamViec = 8;
 
-
+        Console.WriteLine("Ten: {0} - {1} nam kinh nghiem ", hoten, namLamViec);
+    }
+}
