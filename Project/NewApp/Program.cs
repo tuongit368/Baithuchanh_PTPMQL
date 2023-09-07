@@ -1,4 +1,5 @@
-﻿// using NewApp.Models;
+﻿using Internal;
+// using NewApp.Models;
 
 //     public class Program
 //     {
@@ -157,11 +158,23 @@
 using System;
 internal class Program
 {
-    private static void Main(string[] args)
-    {
-        const string hoten = "Dang Ngoc Tuong";
-        const int namLamViec = 8;
+    // private static void Main(string[] args)
+    // {
+    //     const string hoten = "Dang Ngoc Tuong";
+    //     const int namLamViec = 8;
 
-        Console.WriteLine("Ten: {0} - {1} nam kinh nghiem ", hoten, namLamViec);
+    //     Console.WriteLine("Ten: {0} - {1} nam kinh nghiem ", hoten, namLamViec);
+    // }
+
+    for(int i = 0; i < 10; i++)
+    {
+        if(i==5) break;
+        Console.WriteLine("Vong lap thu {0}", i);
+    }
+
+    for(int i = 0; i < 10; i++)
+    {
+        if(i==5) continue;
+        Console.WriteLine("Vong lap thu {0}", i);
     }
 }
