@@ -1,7 +1,3 @@
-using System.IO;
-using System;
-using System.Security.AccessControl;
-
 namespace NewApp.Models
 {
     public class Person
