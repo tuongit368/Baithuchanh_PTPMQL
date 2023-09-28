@@ -1,3 +1,5 @@
+using System.Dynamic;
+using System;
 namespace NewApp.Models
 {
     public class Person
@@ -20,7 +22,13 @@ namespace NewApp.Models
             Address = Console.ReadLine();
 
             System.Console.Write("Age = ");
-            Age = Convert.ToInt16(Console.ReadLine());
+            try
+            {
+                Age = Convert.ToInt16(Console.ReadLine());
+            }catch(Exception ex)
+            {
+                Age = 0;
+            }
         }
 
     public void Output()

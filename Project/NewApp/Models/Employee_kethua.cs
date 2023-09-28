@@ -8,15 +8,23 @@ namespace NewApp.Models
         public void Input()
         {
             base.Input();
-            System.Console.Write("Luong: ");
+            System.Console.Write("Luong: "); 
+
+            // Xử lý ngoại lệ
+            try
+            {
             Luong = Convert.ToInt32(Console.ReadLine());
-            
+            }catch(Exception ex)
+            {
+                Luong = 0;
+            }
+            // Kết thúc xử lý ngoại lệ
         }
         
         public void Output()
         {
             base.Output();
-            System.Console.Write("/"+" Luong: "+Luong+"USD");
+            System.Console.Write("/"+" Luong: "+Luong+" USD");
         }
     }
 }
