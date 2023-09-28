@@ -17,18 +17,20 @@ do {
 
 // Khoi tao array
 // KDL[] name = new KDL [KT];
-int [] A = new int[n];
+Person[] A = new Person[n];
 // Add cac phan tu vao array
 // gan gia tri cho phan tu thu 2
 for(int i = 0; i < A.Length; i++ )
 {
-    System.Console.Write("A[{0}] = ", i);
-    A[i] = Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine("A[{0}]: ", i);
+    Person ps = new Person();
+    ps.Input();
+    A[i] = ps;
 }
 
 // HIen thi cac phan tu trong array
 System.Console.WriteLine("------------------------------");
 for(int i = 0; i < A.Length; i++)
 {
-    System.Console.Write("{0}\t",A[i]);
+    System.Console.WriteLine(i + " FullName: " + A[i].FullName + " Address: " + A[i].Address + " Age: " + A[i].Age );
 }
