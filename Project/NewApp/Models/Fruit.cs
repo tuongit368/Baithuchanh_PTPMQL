@@ -16,8 +16,13 @@ namespace NewApp.Models
             System.Console.WriteLine("Nhap Ten Qua: ");
             NameFruit = Console.ReadLine();
             
-            System.Console.WriteLine("Nhap Can Nang: ");
-            CanNang = Convert.ToSingle(Console.ReadLine());
+            try{
+                System.Console.WriteLine("Nhap Can Nang: ");
+                CanNang = Convert.ToSingle(Console.ReadLine());
+            }catch(Exception ex)
+            {
+                System.Console.WriteLine("co ngoai le xay ra!");
+            }
             
         }
 
