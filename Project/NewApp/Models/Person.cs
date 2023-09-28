@@ -25,7 +25,7 @@ namespace NewApp.Models
 
     public void Output()
         {
-            System.Console.WriteLine("FullName = {0} / Address = {1} / Age = {2}", FullName, Address, Age);
+            System.Console.Write("FullName = {0} / Address = {1} / Age = {2} ", FullName, Address, Age);
         }
 
 

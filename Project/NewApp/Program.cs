@@ -1,5 +1,7 @@
 ﻿using NewApp.Models;
-PhuongTrinh1 pt1 = new PhuongTrinh1();
-PhuongTrinh1 pt2 = new PhuongTrinh1();
-System.Console.WriteLine(pt1.PhuongTrinhBacNhat(6, 9));
-System.Console.WriteLine(pt2.PhuongTrinhBacHai(2,8,3));
+Student_kethua stdkt = new Student_kethua();
+
+stdkt.StudentCode = "2121050140";
+stdkt.Input();
+stdkt.Output();
+
