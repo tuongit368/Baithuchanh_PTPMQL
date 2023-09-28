@@ -11,8 +11,13 @@ namespace NewApp.Models
 
         public void Input()
         {
-            System.Console.Write("Student ID : ");
-            StudentID = Console.ReadLine();
+            try{
+                System.Console.Write("Student ID : ");
+                StudentID = Console.ReadLine();
+            }catch(Exception ex)
+            {
+                System.Console.WriteLine("Co ngoai le xay ra!");
+            }
             
             System.Console.Write("FullNam : ");
             FullName = Console.ReadLine();
@@ -20,8 +25,13 @@ namespace NewApp.Models
             System.Console.Write("Address : ");
             Address = Console.ReadLine();
             
-            System.Console.Write("Age : ");
-            Age = Convert.ToInt32(Console.ReadLine());
+            try{
+                System.Console.Write("Age : ");
+                Age = Convert.ToInt32(Console.ReadLine());
+            }catch(Exception ex)
+            {
+                System.Console.WriteLine("co ngoai le xay ra !");
+            }
             
         }
 
