@@ -16,11 +16,16 @@ namespace NewApp.Models
             System.Console.Write("Ten Nhan Vien : ");
             TenNhanVien = Console.ReadLine();
             
+        try{
             System.Console.Write("Tuoi : ");
             Tuoi = Convert.ToInt32(Console.ReadLine());
             
             System.Console.Write("Luong : ");
             Luong = Convert.ToInt32(Console.ReadLine());
+        }catch(Exception ex)
+        {
+            System.Console.WriteLine("Co ngoai le xay ra");
+        }
             
         }
 
