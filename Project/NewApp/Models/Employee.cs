@@ -10,8 +10,13 @@ namespace NewApp.Models
 
         public void Input()
         {
-            System.Console.Write("Ma Nhan Vien : ");
-            MaNhanVien = Console.ReadLine();
+            try{
+                System.Console.Write("Ma Nhan Vien : ");
+                MaNhanVien = Console.ReadLine();
+            }catch(Exception ex)
+            {
+                System.Console.WriteLine("Co ngoai le xay ra");
+            }
             
             System.Console.Write("Ten Nhan Vien : ");
             TenNhanVien = Console.ReadLine();
