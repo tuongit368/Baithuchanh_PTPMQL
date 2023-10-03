@@ -187,66 +187,66 @@ internal class Program
         }
 
 
-        System.Console.WriteLine("------------------------------------");
+        // System.Console.WriteLine("------------------------------------");
 
-        // Sua thong tin trong phan tu cua list
+        // // Sua thong tin trong phan tu cua list
 
-        string fullname = null;
-        System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
-        fullname = Console.ReadLine();
+        // string fullname = null;
+        // System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
+        // fullname = Console.ReadLine();
 
-        for(int i = 0; i < personList.Count; i++)
-        {   
-            Person ps = (Person) personList[i];
+        // for(int i = 0; i < personList.Count; i++)
+        // {   
+        //     Person ps = (Person) personList[i];
 
-            if ( ps.FullName == fullname){
+        //     if ( ps.FullName == fullname){
 
-                ps.Input();
-                break;
+        //         ps.Input();
+        //         break;
 
-            }else
-            {
-                System.Console.WriteLine("Khong co thong tin!");
-                break;
-            }
+        //     }else
+        //     {
+        //         System.Console.WriteLine("Khong co thong tin!");
+        //         break;
+        //     }
 
-        }
+        // }
 
-        System.Console.WriteLine("---------------------------");
+        // System.Console.WriteLine("---------------------------");
 
-        foreach(Person ps in personList)
-        {
-            // goi toi phuong thuc hien thi
-            ps.Output();
-        }
+        // foreach(Person ps in personList)
+        // {
+        //     // goi toi phuong thuc hien thi
+        //     ps.Output();
+        // }
 
-        System.Console.WriteLine("----------------------------");
+        // System.Console.WriteLine("----------------------------");
 
-        // Xoa 1 phan tu trong list
+        // // Xoa 1 phan tu trong list
 
-        System.Console.WriteLine("Nhap ten nguoi can xoa: ");
-        fullname = Console.ReadLine();
+        // System.Console.WriteLine("Nhap ten nguoi can xoa: ");
+        // fullname = Console.ReadLine();
         
-        for(int i=0; i < personList.Count; i++ )
-        {
-            Person ps = (Person) personList[i];
-            if(ps.FullName == fullname)
-            {
-                personList.RemoveAt(i);
-                System.Console.WriteLine($"da xoa nguoi co ten la: {fullname}");
-                break;
-            }
-        }
+        // for(int i=0; i < personList.Count; i++ )
+        // {
+        //     Person ps = (Person) personList[i];
+        //     if(ps.FullName == fullname)
+        //     {
+        //         personList.RemoveAt(i);
+        //         System.Console.WriteLine($"da xoa nguoi co ten la: {fullname}");
+        //         break;
+        //     }
+        // }
 
 
-        System.Console.WriteLine("----------------------------");
-        // hien thi danh sach list
+        // System.Console.WriteLine("----------------------------");
+        // // hien thi danh sach list
 
-         foreach(Person ps in personList)
-        {
-            // goi toi phuong thuc hien thi
-            ps.Output();
-        }
+        //  foreach(Person ps in personList)
+        // {
+        //     // goi toi phuong thuc hien thi
+        //     ps.Output();
+        // }
 
     }
 }
