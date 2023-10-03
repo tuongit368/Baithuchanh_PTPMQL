@@ -187,38 +187,38 @@ internal class Program
         }
 
 
-        // System.Console.WriteLine("------------------------------------");
+        System.Console.WriteLine("------------------------------------");
 
-        // // Sua thong tin trong phan tu cua list
+        // Sua thong tin trong phan tu cua list
 
-        // string fullname = null;
-        // System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
-        // fullname = Console.ReadLine();
+        string fullname = null;
+        System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
+        fullname = Console.ReadLine();
 
-        // for(int i = 0; i < personList.Count; i++)
-        // {   
-        //     Person ps = (Person) personList[i];
+        for(int i = 0; i < personList.Count; i++)
+        {   
+            Person ps = (Person) personList[i];
 
-        //     if ( ps.FullName == fullname){
+            if ( ps.FullName == fullname){
 
-        //         ps.Input();
-        //         break;
+                ps.Input();
+                break;
 
-        //     }else
-        //     {
-        //         System.Console.WriteLine("Khong co thong tin!");
-        //         break;
-        //     }
+            }else
+            {
+                System.Console.WriteLine("Khong co thong tin!");
+                break;
+            }
 
-        // }
+        }
 
-        // System.Console.WriteLine("---------------------------");
+        System.Console.WriteLine("---------------------------");
 
-        // foreach(Person ps in personList)
-        // {
-        //     // goi toi phuong thuc hien thi
-        //     ps.Output();
-        // }
+        foreach(Person ps in personList)
+        {
+            // goi toi phuong thuc hien thi
+            ps.Output();
+        }
 
         // System.Console.WriteLine("----------------------------");
 
