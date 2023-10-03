@@ -40,26 +40,26 @@ namespace NewApp.Models
             System.Console.WriteLine(StudentID +"-"+ FullName +"-"+ Address +"-"+ Age +"Tuoi");
         }
 
-        public void InArray()
-        {
-            ArrayList arrayList = new ArrayList();
-            for (int i = 0; i < 2; i++ )
-            {   
-                System.Console.WriteLine("{0}", i);
-                Student std = new Student();
-                std.Input();
-                arrayList.Add(std);
+        // public void InArray()
+        // {
+        //     ArrayList arrayList = new ArrayList();
+        //     for (int i = 0; i < 2; i++ )
+        //     {   
+        //         System.Console.WriteLine("{0}", i);
+        //         Student std = new Student();
+        //         std.Input();
+        //         arrayList.Add(std);
 
-            }
-            foreach(Student std in arrayList)
-            {
+        //     }
+        //     foreach(Student std in arrayList)
+        //     {
 
-                for ( int i = 0; i < arrayList.Count; i++)
-                {
-                    System.Console.WriteLine(i +"Student ID:"+StudentID+"FullName: "+FullName+"Address: "+Address+"Age: "+Age);
-                }
+        //         for ( int i = 0; i < arrayList.Count; i++)
+        //         {
+        //             System.Console.WriteLine(i +"Student ID:"+StudentID+"FullName: "+FullName+"Address: "+Address+"Age: "+Age);
+        //         }
 
-            }
-        }
+        //     }
+        // }
     }
 }
