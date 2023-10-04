@@ -344,7 +344,7 @@ internal class Program
         }
 
         // Hien thi danh sach hoc sinh
-        System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+        System.Console.WriteLine("---------------THONG TIN HOC SINH----------------");
 
         foreach(Student std in StudentList)
         {   
