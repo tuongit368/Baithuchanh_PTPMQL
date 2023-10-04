@@ -292,29 +292,29 @@ internal class Program
             std.Output();
         }
 
-        // // Sua thong tin hoc sinh = Id
+        // Sua thong tin hoc sinh = Id
 
-        // System.Console.WriteLine("------------------SUA THONG TIN HOC SINH------------------");
+        System.Console.WriteLine("------------------SUA THONG TIN HOC SINH------------------");
 
-        // string id = null;
-        // System.Console.WriteLine("Nhap StudentID can sua: ");
-        // id = Console.ReadLine();
+        string id = null;
+        System.Console.WriteLine("Nhap StudentID can sua: ");
+        id = Console.ReadLine();
         
-        // for(int i = 0; i < StudentList.Count; i++)
-        // { 
-        //     Student std = (Student) StudentList[i];
+        for(int i = 0; i < StudentList.Count; i++)
+        { 
+            Student std = (Student) StudentList[i];
 
-        //     if(std.StudentID == id)
-        //     {
-        //         std.Input();
-        //         break;
-        //     }else{
-        //         System.Console.WriteLine(">> Student ID khong ton tai! <<");
-        //         break;
+            if(std.StudentID == id)
+            {
+                std.Input();
+                break;
+            }else{
+                System.Console.WriteLine(">> Student ID khong ton tai! <<");
+                break;
 
-        //     }
+            }
 
-        // }
+        }
 
         // // Hien thi danh sach hoc sinh
         // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
