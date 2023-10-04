@@ -273,16 +273,16 @@ internal class Program
             
         }while ( n < 1);
 
-        // Nhap Thong Tin Hoc sinh
+        Nhap Thong Tin Hoc sinh
 
-        // for ( int i = 0; i < n; i++)
-        // {
-        //     System.Console.WriteLine($"--------------{i}--------------");
-        //     Student std = new Student();
-        //     std.Input();
-        //     StudentList.Add(std);
+        for ( int i = 0; i < n; i++)
+        {
+            System.Console.WriteLine($"--------------{i}--------------");
+            Student std = new Student();
+            std.Input();
+            StudentList.Add(std);
 
-        // }
+        }
 
         // // Hien thi danh sach hoc sinh
         // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
