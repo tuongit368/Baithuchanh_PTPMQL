@@ -316,40 +316,40 @@ internal class Program
 
         }
 
-        // // Hien thi danh sach hoc sinh
-        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+        // Hien thi danh sach hoc sinh
+        System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
 
-        // foreach(Student std in StudentList)
-        // {   
-        //     std.Output();
-        // }
+        foreach(Student std in StudentList)
+        {   
+            std.Output();
+        }
 
-        // // Xoa hoc sinh theo ID 
+        // Xoa hoc sinh theo ID 
 
-        // System.Console.WriteLine("-------------------XOA HOC SINH--------------------");
+        System.Console.WriteLine("-------------------XOA HOC SINH--------------------");
 
-        // System.Console.WriteLine("Nhap StudentID can xoa: ");
-        // id = Console.ReadLine();
+        System.Console.WriteLine("Nhap StudentID can xoa: ");
+        id = Console.ReadLine();
 
-        // for(int i = 0; i < StudentList.Count; i++)
-        // {
-        //     Student std = (Student) StudentList[i];
-        //     if(std.StudentID == id)
-        //     {
-        //         StudentList.RemoveAt(i);
-        //         System.Console.WriteLine($">> Xoa Thanh Cong StudentID: {id} !");
-        //         break;
+        for(int i = 0; i < StudentList.Count; i++)
+        {
+            Student std = (Student) StudentList[i];
+            if(std.StudentID == id)
+            {
+                StudentList.RemoveAt(i);
+                System.Console.WriteLine($">> Xoa Thanh Cong StudentID: {id} !");
+                break;
 
-        //     }
-        // }
+            }
+        }
 
-        // // Hien thi danh sach hoc sinh
-        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+        // Hien thi danh sach hoc sinh
+        System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
 
-        // foreach(Student std in StudentList)
-        // {   
-        //     std.Output();
-        // }
+        foreach(Student std in StudentList)
+        {   
+            std.Output();
+        }
 
     }
 }
