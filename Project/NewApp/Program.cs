@@ -284,13 +284,13 @@ internal class Program
 
         }
 
-        // // Hien thi danh sach hoc sinh
-        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+        // Hien thi danh sach hoc sinh
+        System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
 
-        // foreach(Student std in StudentList)
-        // {   
-        //     std.Output();
-        // }
+        foreach(Student std in StudentList)
+        {   
+            std.Output();
+        }
 
         // // Sua thong tin hoc sinh = Id
 
