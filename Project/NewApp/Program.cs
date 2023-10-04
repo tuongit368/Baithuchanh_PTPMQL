@@ -1,4 +1,7 @@
-﻿// using System.IO.Pipes;
+﻿using System.Security.Cryptography;
+using System.Collections.Specialized;
+using System;
+// using System.IO.Pipes;
 // using System;
 
 // class Student
@@ -137,116 +140,216 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ArrayList personList = new ArrayList();
-        int n;
-        do
-        {
-            try
-            {
-                System.Console.Write("n = ");
-                n = Convert.ToInt32(Console.ReadLine());
+    //     ArrayList personList = new ArrayList();
+    //     int n;
+    //     do
+    //     {
+    //         try
+    //         {
+    //             System.Console.Write("n = ");
+    //             n = Convert.ToInt32(Console.ReadLine());
 
-            }
-            catch
+    //         }
+    //         catch
+    //         {
+    //             n = 0;
+    //         }
+    //     } while (n < 1);
+
+    //     // Them n phan tu vao list
+
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         System.Console.WriteLine($"[{i}]");
+    //         Person ps = new Person();
+    //         ps.Input();
+    //         personList.Add(ps);
+    //     }
+
+    //     // ket thuc
+
+    //     // hien thi danh sach  --- -- cach 1 - -- - 
+
+    //     // for(int i = 0; i<n; i++)
+    //     // {
+    //     //     // lay ra phan tu thu i trong arrlist va ep kieu person
+    //     //     Person ps = (Person) personList[i];
+
+    //     //     // goi toi phuong thuc hien thi
+    //     //     ps.Output();
+
+    //     // }
+
+
+    //     System.Console.WriteLine("----------------------------------");
+    //     // Hien thi danh sach -- - -- - Cach 2 - - -- -- -
+    //     foreach(Person ps in personList)
+    //     {
+    //         // goi toi phuong thuc hien thi
+    //         ps.Output();
+    //     }
+
+
+    //     System.Console.WriteLine("------------------------------------");
+
+    //     // Sua thong tin trong phan tu cua list
+
+    //     string fullname = null;
+    //     System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
+    //     fullname = Console.ReadLine();
+
+    //     for(int i = 0; i < personList.Count; i++)
+    //     {   
+    //         Person ps = (Person) personList[i];
+
+    //         if ( ps.FullName == fullname){
+
+    //             ps.Input();
+    //             break;
+
+    //         }else
+    //         {
+    //             System.Console.WriteLine("Khong co thong tin!");
+    //             break;
+    //         }
+
+    //     }
+
+    //     System.Console.WriteLine("---------------------------");
+
+    //     foreach(Person ps in personList)
+    //     {
+    //         // goi toi phuong thuc hien thi
+    //         ps.Output();
+    //     }
+
+    //     System.Console.WriteLine("----------------------------");
+
+    //     // Xoa 1 phan tu trong list
+
+    //     System.Console.WriteLine("Nhap ten nguoi can xoa: ");
+    //     fullname = Console.ReadLine();
+        
+    //     for(int i=0; i < personList.Count; i++ )
+    //     {
+    //         Person ps = (Person) personList[i];
+    //         if(ps.FullName == fullname)
+    //         {
+    //             personList.RemoveAt(i);
+    //             System.Console.WriteLine($"da xoa nguoi co ten la: {fullname}");
+    //             break;
+    //         }
+    //     }
+
+
+    //     System.Console.WriteLine("----------------------------");
+    //     // hien thi danh sach list
+
+    //      foreach(Person ps in personList)
+    //     {
+    //         // goi toi phuong thuc hien thi
+    //         ps.Output();
+    //     }
+
+
+
+
+
+
+
+        // khai bao mang StudentList
+        ArrayList StudentList = new ArrayList();
+        
+        int n;
+
+        do {
+            try{
+                System.Console.WriteLine("Nhap so hoc sinh: ");
+                n = Int16.Parse(Console.ReadLine());
+            }catch
             {
                 n = 0;
             }
-        } while (n < 1);
+            
+        }while ( n < 1);
 
-        // Them n phan tu vao list
+        // Nhap Thong Tin Hoc sinh
 
-        for (int i = 0; i < n; i++)
-        {
-            System.Console.WriteLine($"[{i}]");
-            Person ps = new Person();
-            ps.Input();
-            personList.Add(ps);
-        }
-
-        // ket thuc
-
-        // hien thi danh sach  --- -- cach 1 - -- - 
-
-        // for(int i = 0; i<n; i++)
+        // for ( int i = 0; i < n; i++)
         // {
-        //     // lay ra phan tu thi i trong arrlist va ep kieu person
-        //     Person ps = (Person) personList[i];
-
-        //     // goi toi phuong thuc hien thi
-        //     ps.Output();
+        //     System.Console.WriteLine($"--------------{i}--------------");
+        //     Student std = new Student();
+        //     std.Input();
+        //     StudentList.Add(std);
 
         // }
 
+        // // Hien thi danh sach hoc sinh
+        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
 
-        System.Console.WriteLine("----------------------------------");
-        // Hien thi danh sach -- - -- - Cach 2 - - -- -- -
-        foreach(Person ps in personList)
-        {
-            // goi toi phuong thuc hien thi
-            ps.Output();
-        }
+        // foreach(Student std in StudentList)
+        // {   
+        //     std.Output();
+        // }
 
+        // // Sua thong tin hoc sinh = Id
 
-        System.Console.WriteLine("------------------------------------");
+        // System.Console.WriteLine("------------------SUA THONG TIN HOC SINH------------------");
 
-        // Sua thong tin trong phan tu cua list
-
-        string fullname = null;
-        System.Console.WriteLine($"Nhap ten nguoi hoc sinh can thay doi: {fullname}");
-        fullname = Console.ReadLine();
-
-        for(int i = 0; i < personList.Count; i++)
-        {   
-            Person ps = (Person) personList[i];
-
-            if ( ps.FullName == fullname){
-
-                ps.Input();
-                break;
-
-            }else
-            {
-                System.Console.WriteLine("Khong co thong tin!");
-                break;
-            }
-
-        }
-
-        System.Console.WriteLine("---------------------------");
-
-        foreach(Person ps in personList)
-        {
-            // goi toi phuong thuc hien thi
-            ps.Output();
-        }
-
-        System.Console.WriteLine("----------------------------");
-
-        // Xoa 1 phan tu trong list
-
-        System.Console.WriteLine("Nhap ten nguoi can xoa: ");
-        fullname = Console.ReadLine();
+        // string id = null;
+        // System.Console.WriteLine("Nhap StudentID can sua: ");
+        // id = Console.ReadLine();
         
-        for(int i=0; i < personList.Count; i++ )
-        {
-            Person ps = (Person) personList[i];
-            if(ps.FullName == fullname)
-            {
-                personList.RemoveAt(i);
-                System.Console.WriteLine($"da xoa nguoi co ten la: {fullname}");
-                break;
-            }
-        }
+        // for(int i = 0; i < StudentList.Count; i++)
+        // { 
+        //     Student std = (Student) StudentList[i];
 
+        //     if(std.StudentID == id)
+        //     {
+        //         std.Input();
+        //         break;
+        //     }else{
+        //         System.Console.WriteLine(">> Student ID khong ton tai! <<");
+        //         break;
 
-        System.Console.WriteLine("----------------------------");
-        // hien thi danh sach list
+        //     }
 
-         foreach(Person ps in personList)
-        {
-            // goi toi phuong thuc hien thi
-            ps.Output();
-        }
+        // }
+
+        // // Hien thi danh sach hoc sinh
+        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+
+        // foreach(Student std in StudentList)
+        // {   
+        //     std.Output();
+        // }
+
+        // // Xoa hoc sinh theo ID 
+
+        // System.Console.WriteLine("-------------------XOA HOC SINH--------------------");
+
+        // System.Console.WriteLine("Nhap StudentID can xoa: ");
+        // id = Console.ReadLine();
+
+        // for(int i = 0; i < StudentList.Count; i++)
+        // {
+        //     Student std = (Student) StudentList[i];
+        //     if(std.StudentID == id)
+        //     {
+        //         StudentList.RemoveAt(i);
+        //         System.Console.WriteLine($">> Xoa Thanh Cong StudentID: {id} !");
+        //         break;
+
+        //     }
+        // }
+
+        // // Hien thi danh sach hoc sinh
+        // System.Console.WriteLine("---------------THONG TIN HOC SINH---------------");
+
+        // foreach(Student std in StudentList)
+        // {   
+        //     std.Output();
+        // }
 
     }
 }

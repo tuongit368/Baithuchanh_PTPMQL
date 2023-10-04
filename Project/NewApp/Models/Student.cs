@@ -19,7 +19,7 @@ namespace NewApp.Models
                 System.Console.WriteLine("Co ngoai le xay ra!");
             }
             
-            System.Console.Write("FullNam : ");
+            System.Console.Write("FullName : ");
             FullName = Console.ReadLine();
             
             System.Console.Write("Address : ");
