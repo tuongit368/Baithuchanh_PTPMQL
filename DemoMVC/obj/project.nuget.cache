@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xdMP9gk7vp3Z9j+W0XWkhrPLLPCNbW8IwLxQ9L4ybn7u9O+NtXBBMrxGRS+6avOiOKOxaMjdIAZhivBdimL1Uw==",
+  "dgSpecHash": "2exZWJI3BbiO92vEDcLpTS+YMADZSie29euXV1sMrnSgZBtOH0gldqCCxtdHqHV37TynX9pUjt80nEHRvWxM6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tuong\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+  "projectFilePath": "C:\\Users\\tuong\\PTPMQL\\demomvc\\DemoMVC.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
