@@ -13,12 +13,14 @@ namespace DemoMVC.Controllers
             return View();
             
         }
+        
+        [HttpPost]
 
         public IActionResult Index(Student std)
         {
             string text = "StudentID: " + std.StudentID + " || " + "FullName: " + std.FullName
-                          + " || " + "Address: " + std.Address + " || " + "Age: " + std.Age +" Tuoi"
-            @ViewBag.ThongBao = text;
+                          + " || " + "Address: " + std.Address + " || " + "Age: " + std.Age +" Tuoi";
+            ViewBag.ThongBao = text;
             
             return View();
 
