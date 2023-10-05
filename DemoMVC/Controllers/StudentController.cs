@@ -2,6 +2,7 @@
 
 
 using Microsoft.AspNetCore.Mvc;
+using NewApp.Models;
 
 namespace DemoMVC.Controllers
 {
@@ -11,6 +12,16 @@ namespace DemoMVC.Controllers
         {
             return View();
             
+        }
+
+        public IActionResult Index(Student std)
+        {
+            string text = "StudentID: " + std.StudentID + " || " + "FullName: " + std.FullName
+                          + " || " + "Address: " + std.Address + " || " + "Age: " + std.Age +" Tuoi"
+            @ViewBag.ThongBao = text;
+            
+            return View();
+
         }
 
     }
