@@ -13,7 +13,10 @@ namespace DemoMVC.Controllers
 
         public IActionResult Index(string HoTen, float LuongCoBan, float HeSoLuong, float PhuCap)
         {
-            
+            int Luong = ( LuongCoBan*HeSoLuong + PhuCap );
+            string ThongBao = "Họ và Tên: "+ HoTen + "Lương: " + Luong;
+
+            ViewBag.ThongBao = ThongBao;
             return View();
         }
     }
