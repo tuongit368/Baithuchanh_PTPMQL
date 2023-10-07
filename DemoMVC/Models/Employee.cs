@@ -7,6 +7,8 @@ namespace NewApp.Models
         public string TenNhanVien { get; set; } 
         public int Tuoi { get; set; }   
         public int Luong { get; set; }  
+        public int HeSoLuong { get; set; }
+        public int TroCap { get; set; }
 
         public void Input()
         {

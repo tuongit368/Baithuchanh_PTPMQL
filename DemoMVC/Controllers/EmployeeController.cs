@@ -1,5 +1,5 @@
+
 using System.ComponentModel.Design;
-using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoMVC.Controllers
@@ -8,6 +8,12 @@ namespace DemoMVC.Controllers
     {
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Index(string HoTen, float LuongCoBan, float HeSoLuong, float PhuCap)
+        {
+            
             return View();
         }
     }
