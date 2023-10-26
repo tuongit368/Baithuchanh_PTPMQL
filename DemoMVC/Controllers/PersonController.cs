@@ -18,7 +18,7 @@ namespace DemoMVC.Controllers
 
         public IActionResult Index(Person ps)
         {
-            string strOutput = "Xin Chao" + ps.PersonId + " - " + ps.FullName + " - " + ps.Address;
+            string strOutput = "PersonId: " + ps.PersonId + " - " + "FullName: " + ps.FullName + " - " + "Address: " + ps.Address;
             ViewBag.infoPerson = strOutput;
             return View();
             

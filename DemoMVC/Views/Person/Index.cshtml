@@ -1,7 +1,7 @@
-// Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140
+@* // Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140 *@
 
-<h1>Dữ liệu gửi từ Contraller gửi về là: @ViewBag.infoPerson </h1>
-<form asp-action="Index">
+
+@* <form asp-action="Index">
     <label for="">Nhập PersonID:</label>
     <input type="text" name="PersonId" id="">
     <label for="">Nhập họ và tên:</label>
@@ -9,4 +9,26 @@
     <label for="">Nhập địa chỉ:</label>
     <input type="text" name="Address" id="">
     <input type="submit" value="Gửi dữ liệu">
+</form> *@
+
+<div class="w3-container w3-padding w3-panel w3-card w3-light-grey">
+<form asp-action="Index" class="w3-container">
+  <p>
+  <label>PersonId:</label>
+  <input name="PersonId" class="w3-round-large w3-input w3-border w3-border-blue" type="text" required placeholder="Enter PersonId..."></p>
+  <p>
+  <label>Fullname:</label>
+  <input name="Fullname" class="w3-round-large w3-input w3-border w3-border-blue" type="text"required placeholder="Enter Fullname..."></p>
+  <p>
+  <label>Address:</label>
+  <input name="Address" class="w3-round-large w3-input w3-border w3-border-blue" type="text"required placeholder="Enter Address..."></p>
+
+  <input class="w3-round-large w3-right w3-btn w3-border w3-border-blue w3-blue" type="submit" value="Send data">
 </form>
+</div>
+
+@* <h2>Dữ liệu: @ViewBag.infoPerson </h2> *@
+<div class="w3-panel w3-pale-blue w3-card-4">
+  <h3>Dữ liệu:</h3>
+  <p>@ViewBag.infoPerson</p>
+</div>
