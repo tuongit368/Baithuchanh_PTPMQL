@@ -1,19 +1,24 @@
 @* // Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140 *@
-
+<div class="w3-container w3-padding w3-panel w3-card w3-light-grey">
 <form asp-action="Index">
 
     <label>Họ và Tên:</label><br>
-    <input type="text" name="HoTen" required placeholder="Enter họ và tên"><br>
+    <input type="text" name="HoTen" class="w3-round-large w3-input w3-border w3-border-blue" required placeholder="Enter họ và tên"><br>
     <label>Lương cơ bản:</label><br>
-    <input type="text" name="LuongCoBan" required placeholder="Enter lương cơ bản"><br>
+    <input type="text" name="LuongCoBan" class="w3-round-large w3-input w3-border w3-border-blue" required placeholder="Enter lương cơ bản"><br>
     <label>Hệ số lương:</label><br>
-    <input type="text" name="HeSoLuong" required placeholder="Enter hệ số lương"><br>
+    <input type="text" name="HeSoLuong" class="w3-round-large w3-input w3-border w3-border-blue" required placeholder="Enter hệ số lương"><br>
     <label>Phụ cấp:</label><br>
-    <input type="text" name="PhuCap" required placeholder="Enter phụ cấp"><br>
+    <input type="text" name="PhuCap" class="w3-round-large w3-input w3-border w3-border-blue" required placeholder="Enter phụ cấp"><br>
 
     <br>
 
-    <input type="submit" value="Save">
+    <input class="w3-round-large w3-right w3-btn w3-border w3-border-blue w3-blue" type="submit" value="Save">
 </form> 
+</div>
 
-<p>@ViewBag.ThongBao</p>
+<div class="w3-panel w3-pale-blue w3-card-4">
+  <h3>Dữ liệu:</h3>
+  <hr>
+  <p>@ViewBag.ThongBao</p>
+</div>
