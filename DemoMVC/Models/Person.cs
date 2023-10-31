@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace DemoMVC.Models
 {
+    [Table("Persons")]
     public class Person 
     {
+        [Key]
         // Thuoc tinh
         public string PersonId { get; set; }
         public string FullName { get; set; }
