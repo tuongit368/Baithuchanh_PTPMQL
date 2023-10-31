@@ -1,5 +1,6 @@
 using System.Collections;
 using System;
+// Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140
 namespace NewApp.Models
 {
     public class Student
