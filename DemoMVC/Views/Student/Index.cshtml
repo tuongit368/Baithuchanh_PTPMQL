@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="w3-center">Trang Chủ</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="w3-button w3-teal" asp-action="Create">Thêm học sinh mới</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table w3-table-all w3-card-4 w3-animate-left">
+    @* <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
@@ -23,10 +23,24 @@
             </th>
             <th></th>
         </tr>
+    </thead> *@
+    <thead>
+      <tr class="w3-light-grey w3-hover-red ">
+        <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th></th>
+      </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="w3-hover-gray">
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
@@ -36,10 +50,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Age)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.StudentID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.StudentID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.StudentID">Delete</a>
+            <td class="w3-right">
+                <a class="w3-button w3-blue w3-round-large" asp-action="Edit" asp-route-id="@item.StudentID">Edit</a> |
+                @* <a asp-action="Details" asp-route-id="@item.StudentID">Details</a> | *@
+                <a class="w3-button w3-red w3-round-large" asp-action="Delete" asp-route-id="@item.StudentID">Delete</a>
             </td>
         </tr>
 }
