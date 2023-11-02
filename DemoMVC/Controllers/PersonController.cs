@@ -1,7 +1,12 @@
+using System.Net.Mime;
 using System.Security.AccessControl;
 using System.Net;
-// Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140
+// using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using DemoMVC.Data;
 using DemoMVC.Models;
+
+// Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140
 
 
 
@@ -27,3 +32,4 @@ namespace DemoMVC.Controllers
         }
     }
 }
+

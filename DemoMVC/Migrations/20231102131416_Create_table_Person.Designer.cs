@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DemoMVC.Migrations
 {
-    [DbContext(typeof(ApplicationDbcontext))]
-    [Migration("20231031110656_Create_table_Person")]
+    [DbContext(typeof(ApplicationDbContext))]
+    [Migration("20231102131416_Create_table_Person")]
     partial class Create_table_Person
     {
         /// <inheritdoc />
