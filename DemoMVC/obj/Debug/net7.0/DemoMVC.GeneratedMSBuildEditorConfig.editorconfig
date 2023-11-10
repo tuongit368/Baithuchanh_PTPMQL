@@ -9,77 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DemoMVC
 build_property.RootNamespace = DemoMVC
-build_property.ProjectDir = C:\Users\tuong\ptpmql\demomvc\
+build_property.ProjectDir = C:\Users\tuong\PTPMQL\DemomVc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tuong\ptpmql\demomvc
+build_property.MSBuildProjectDirectory = C:\Users\tuong\PTPMQL\DemomVc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Demo/Index.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Demo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Employee/Index.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Home/Demo.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Home/Demo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Home/Index.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Home/Privacy.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Person/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/PhuongTrinhBac2/Index.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/PhuongTrinhBac2/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVHJpbmhCYWMyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Shared/Error.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Student/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/Student/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/Student/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/Student/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/Student/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tuong/ptpmql/demomvc/Views/_ViewImports.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/_ViewStart.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tuong/ptpmql/demomvc/Views/Shared/_Layout.cshtml]
+[C:/Users/tuong/PTPMQL/DemomVc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hzgfhw30l6

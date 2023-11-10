@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    background-color: #efefef;
+    height: 1000px;
+}
+
+.header{
+    background-color: #ffff;
+    /* width: 500px; */
+    height: 100px;
+    /* border: solid 2px; */
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(128, 128, 137);
+}
+
+.header .logo{
+    height: 100px;
+    width: 200px;
+    /* border: solid 2px; */
+    float: left;
+}
+
+.header .logo .logo_tiki{
+    width: 197px;
+    padding: 0px 50px;
+}
+
+.header .search{
+    /* display: flex; */
+    height: 100px;
+    width: 65%;
+    /* border: solid 2px; */
+    float: left;
+    margin-right: 50px;
+    
+}
+
+.header .search .input_text{
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border: solid 1px rgb(128, 128, 137);
+    border-radius: 8px ;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.header .search a{
+    /* text-transform: none; */
+    padding-left: 6px;
+}
+
+
+.header .header_left{
+    display: flex;
+    height: 100px;
+    /* border: solid 2px; */
+}
+
+
+.header .header_left .giohang{
+    margin-top: 10px;
+    padding-left: 16px;
+
+}
+
+.header .header_left .home, .login{
+    margin-top: 20px;
+    padding-left: 16px;
+}
+
+.header .header_left .icon_giohang .giohang{
+    width: 50px;
+}
+
+.header .header_left .home .login{
+    /* padding-top: 10px; */
+}
+
+.quangcao{
+    height: 50px;
+    background-color: rgb(255, 232, 128);
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+.quangcao .quangcao_text{
+    text-align: center;
+    line-height: 50px;
+}
+
+.quangcao .quangcao_text .freeship{
+    width: 70px;
+    /* text-decoration: none; */
+}
+
+.quangcao .quangcao_text strong{
+    color: black;
+    font-weight: 200;
+
+}
+
+/* Ket thuc ban header */
+
+/* bat dau nav */
+
+.nav{
+    float: left;
+    height: 50%;
+    width: 15%;
+    /* border: solid 2px; */
+    border-radius: 8px;
+    margin: 36px 60px;
+    background-color: #ffff;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+    overflow-y: scroll;
+    
+}
+
+.nav::-webkit-scrollbar{
+    display: none;
+}
+
+.nav .menu{
+    padding: 10px 10px;
+}
+
+.nav .menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .menu .danhmuc{
+    margin-bottom: 10px;
+}
+
+.nav .menu b{
+    font-weight: 600;
+}
+
+.nav .menu .option{
+    display: flex;
+    /* margin-top: 12px; */
+    /* padding: 10px 16px; */
+    height: 46px;
+    line-height: 46px;
+}
+
+.nav .menu .option img{
+    width: 28px;
+    padding-top: 10px;
+}
+
+.nav .menu .option .icon_option{
+    float: left;
+    padding-right: 5px;
+}
+
+
+.nav .menu .option:hover{
+    /* color: rgb(128, 128, 137); */
+    background: rgba(39, 39, 42, 0.12);
+}
+
+/* Ket thuc phan nav */
+
+/* Bat dau phan banner */
+
+
+
+.banner{
+    margin-right: 50px;
+    margin-top: 36px;
+    /* border: solid 2px; */
+    display: flex;
+    height: 216px;
+
+}
+
+.slider-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+  }
+  
+  .menu_banner {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu_banner label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    transition: all .3s ease;
+    &:hover {
+      background: red;
+    }
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+    border-radius: 10px;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  
+  .slide-1 {
+    background-image: url("/img/banner1.webp");
+  }
+  .slide-2 {
+    background-image: url("/img/banner2.webp");
+  }
+  .slide-3 {
+    background-image: url("/img/banner3.webp");
+  }
+
+
+/* Ket thuc phan banner */
+
+/* Bat Dau content */
+
+.contents{
+    margin-top: 24px;
+    display: flex;
+    border: solid 2px;
+    height: 500px;
+}
+
+
+/* Ket thuc content */

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+// using Microsoft.EntityFrameworkCore.Sqlite;
 using DemoMVC.Models;
-using NewApp.Models;
+// using NewApp.Models;
 
 namespace DemoMVC.Data
 {
@@ -11,6 +12,6 @@ namespace DemoMVC.Data
 
         public DbSet<Person> Person { get; set;}
 
-        public DbSet<NewApp.Models.Student> Student { get; set; } = default!;
+        public DbSet<DemoMVC.Models.Student> Student { get; set; } = default!;
     }
 }

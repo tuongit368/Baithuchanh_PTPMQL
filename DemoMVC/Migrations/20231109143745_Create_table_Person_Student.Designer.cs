@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231102132130_Create_table_Student")]
-    partial class Create_table_Student
+    [Migration("20231109143745_Create_table_Person_Student")]
+    partial class Create_table_Person_Student
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,34 +28,45 @@ namespace DemoMVC.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("PersonId");
 
-                    b.ToTable("Persons");
+                    b.ToTable("Person");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
+
+                    b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("NewApp.Models.Student", b =>
+            modelBuilder.Entity("DemoMVC.Models.Student", b =>
                 {
+                    b.HasBaseType("DemoMVC.Models.Person");
+
                     b.Property<string>("StudentID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("INTEGER");
+                    b.ToTable("Person");
 
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.HasDiscriminator().HasValue("Student");
+                });
 
-                    b.HasKey("StudentID");
+            modelBuilder.Entity("DemoMVC.Models.Student", b =>
+                {
+                    b.HasOne("DemoMVC.Models.Person", "Person")
+                        .WithMany()
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.ToTable("Student");
+                    b.Navigation("Person");
                 });
 #pragma warning restore 612, 618
         }

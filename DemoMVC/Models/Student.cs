@@ -1,46 +1,17 @@
-using System.Collections;
-using System;
-// Ho Va Ten : Dang Ngoc Tuong  || Ma Sinh Vien : 2121050140
-namespace NewApp.Models
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace DemoMVC.Models
 {
-    public class Student
+    public class Student : Person
     {
-        public string StudentID { get; set; }   
-        public string FullName  { get; set; }
-        public string Address { get; set; }
-        public int Age { get; set; }
+        // [Required(ErrorMessage = "Vui long nhap Student id")]
+        public string StudentID { get; set; }
+        public string PersonId { get; set; }
 
-        public void Input()
-        {
-            try{
-                System.Console.Write("Student ID : ");
-                StudentID = Console.ReadLine();
-            }catch(Exception ex)
-            {
-                System.Console.WriteLine("Co ngoai le xay ra!");
-            }
-            
-            System.Console.Write("FullName : ");
-            FullName = Console.ReadLine();
-            
-            System.Console.Write("Address : ");
-            Address = Console.ReadLine();
-            
-            try{
-                System.Console.Write("Age : ");
-                Age = Convert.ToInt32(Console.ReadLine());
-            }catch(Exception ex)
-            {
-                System.Console.WriteLine("co ngoai le xay ra !");
-            }
-            
-        }
+        [ForeignKey("PersonId")]
+        public Person? Person { get; set; }
 
-        public void Output()
-        {
-            System.Console.WriteLine("StudentID: "+ StudentID +" - "+"FullName: "+ FullName +" - "+"Address: "+ Address +" - "+"Age: "+ Age +"Tuoi");
-        }
-
-        
     }
 }
