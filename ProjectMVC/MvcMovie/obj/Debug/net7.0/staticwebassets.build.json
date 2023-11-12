@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CVPeRUbx9pQpOJd59NtijNwUmvuAElVrK1SosojI4cw=",
+  "Hash": "CeYxDoe5A0Vk63uxdSyLYA2YcF3ydGZ9ZXo4JZ4pBA4=",
   "Source": "MvcMovie",
   "BasePath": "_content/MvcMovie",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\tuong\\PTPMQL\\ProjectMVC\\Mvcmovie\\wwwroot\\css\\w3.css",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tuong\\PTPMQL\\ProjectMVC\\Mvcmovie\\wwwroot\\",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "css/w3.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\w3.css"
     },
     {
       "Identity": "C:\\Users\\tuong\\PTPMQL\\ProjectMVC\\Mvcmovie\\wwwroot\\favicon.ico",

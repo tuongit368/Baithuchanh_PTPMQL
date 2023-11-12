@@ -82,7 +82,7 @@ namespace MvcMovie.Controllers
             {
                 return NotFound();
             }
-            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyID", student.FacultyID);
+            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyName", student.FacultyID);
             return View(student);
         }
 
