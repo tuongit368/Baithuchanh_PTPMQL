@@ -48,7 +48,7 @@ namespace MvcMovie.Controllers
         // GET: Student/Create
         public IActionResult Create()
         {
-            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyID");
+            ViewData["FacultyID"] = new SelectList(_context.Faculty, "FacultyID", "FacultyName");
             return View();
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXKj7XVSwj5jINMyHsIiQ36BKRwEaTL9Kzw6cavR5dt1uzmTYztZwBzd0Hi7uo2dZbZEBT8SkS77aCMXxO2Pzw==",
+  "dgSpecHash": "QQv6PQfQpkgyWJH5XuXD6gPSfqWew3HIJOBIYN0glhb9kcQkuNHDlV3GfSrgGyaEPgaaGKJtqHuSJFrhweb4Bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tuong\\PTPMQL\\ProjectMVC\\mvcmovie\\MvcMovie.csproj",
+  "projectFilePath": "C:\\Users\\tuong\\PTPMQL\\ProjectMVC\\Mvcmovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tuong\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\tuong\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

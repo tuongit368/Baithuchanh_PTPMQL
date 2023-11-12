@@ -4,29 +4,60 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Faculty</h1>
 
-<h4>Faculty</h4>
+<h5>Index > Create new</h5>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FacultyName" class="control-label"></label>
-                <input asp-for="FacultyName" class="form-control" />
+            <div class="form-group w3-margin-bottom">
+                @* <label asp-for="FacultyName" class="control-label"></label> *@
+                <input asp-for="FacultyName" class="form-control w3-input w3-border" placeholder="FacultyName?"/>
                 <span asp-validation-for="FacultyName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group w3-half">
+                <input type="submit" value="Create" class=" w3-button w3-block w3-green" />
+            </div>
+            <div class="w3-half">
+                <a asp-action="Index" class="w3-button w3-block w3-red">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
+@* <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Phản hồi</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">Phản hồi</h1>
+      <p>Bạn có phản hồi gì với chúng tôi không?</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Tên?" name="name">
+      </form>
+      <p><i>TL STUDIO</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">GỬI</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">KHÔNG GỬI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
